@@ -32,12 +32,10 @@ const Home = () => {
         <Loader />
       ) : (
         <div className="flex flex-col md:flex-row md:h-screen">
-          {/* Left side - Map */}
           <div className="w-full md:w-1/2 h-1/2 md:h-full">
             <MapView places={places} />
           </div>
 
-          {/* Right side - Fixed frame with scrolling list */}
           <div className="w-full md:w-1/2 p-4 overflow-y-auto bg-gray-100">
             <PlaceList places={places} />
             <Pagination

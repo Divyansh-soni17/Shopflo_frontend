@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Utility function to truncate text
+ 
 const truncateText = (text, maxLength) => {
   if (text.length <= maxLength) return text;
   return text.substring(0, maxLength).trim() + " ...";
@@ -10,7 +10,7 @@ const truncateText = (text, maxLength) => {
 const PlaceCard = ({ place }) => {
   const { name, description, imageURL, price, id } = place;
 
-  // Truncate description to a certain number of words
+ 
   const truncatedDescription = truncateText(description, 30);
 
   return (
@@ -24,7 +24,7 @@ const PlaceCard = ({ place }) => {
       <p className="text-gray-700 mb-2">{truncatedDescription}</p>
       <div className="flex justify-between items-center">
         <p className="text-blue-500 font-semibold">${price}</p>
-        {/* Add any other action button or details here */}
+         
       </div>
     </Link>
   );

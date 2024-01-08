@@ -38,7 +38,7 @@ const PlaceDetails = () => {
         <Loader />
       ) : (
         <div className="flex flex-col md:flex-row items-center bg-gray-100 p-4 mt-4 md:p-8">
-          {/* Left Side: Image */}
+           
           <div className="md:w-1/2">
             <img
               src={placeDetail.imageURL}
@@ -47,7 +47,7 @@ const PlaceDetails = () => {
             />
           </div>
 
-          {/* Right Side: Details */}
+           
           <div className="md:w-1/2 p-4">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               {placeDetail.name}
